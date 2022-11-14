@@ -1,0 +1,3 @@
+org.tinger.config.LocalJsonConfigLoader
+org.tinger.config.LocalPropConfigLoader
+org.tinger.config.LocalInitConfigLoader

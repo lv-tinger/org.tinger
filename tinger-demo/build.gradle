@@ -1,0 +1,11 @@
+dependencies {
+    implementation project(":tinger-core")
+    implementation project(":tinger-common")
+    implementation project(":tinger-config")
+    implementation project(":tinger-event")
+    implementation project(":tinger-boot")
+    implementation project(":tinger-data")
+    implementation project(":tinger-mysql")
+    implementation project(":tinger-spring")
+    implementation project(":tinger-embed")
+}

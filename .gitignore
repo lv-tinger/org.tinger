@@ -1,0 +1,26 @@
+# Project exclude paths
+/.gradle/
+/tinger-boot/build/
+/tinger-boot/build/classes/java/main/
+/tinger-cache/build/
+/tinger-cache/build/classes/java/main/
+/tinger-common/build/
+/tinger-common/build/classes/java/main/
+/tinger-config/build/
+/tinger-config/build/classes/java/main/
+/tinger-core/build/
+/tinger-core/build/classes/java/main/
+/tinger-couch/build/
+/tinger-couch/build/classes/java/main/
+/tinger-data/build/
+/tinger-data/build/classes/java/main/
+/tinger-demo/build/
+/tinger-demo/build/classes/java/main/
+/tinger-embed/build/
+/tinger-embed/build/classes/java/main/
+/tinger-event/build/
+/tinger-event/build/classes/java/main/
+/tinger-mysql/build/
+/tinger-mysql/build/classes/java/main/
+/tinger-spring/build/
+/tinger-spring/build/classes/java/main/

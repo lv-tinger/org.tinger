@@ -1,0 +1,2 @@
+org.tinger.bootstrap.interceptor.BannerStartInterceptor
+org.tinger.bootstrap.interceptor.BannerCloseInterceptor

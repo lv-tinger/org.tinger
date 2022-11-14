@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(":tinger-core")
+    implementation project(":tinger-common")
+
+    implementation 'com.lmax:disruptor:3.4.4'
+}

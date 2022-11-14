@@ -1,0 +1,6 @@
+dependencies {
+    implementation project(':tinger-core')
+    implementation project(':tinger-common')
+    implementation project(':tinger-cache')
+    implementation "com.couchbase.client:java-client:${couch_version}"
+}

@@ -1,0 +1,7 @@
+dependencies {
+    implementation project(":tinger-core")
+    implementation project(":tinger-common")
+    implementation project(":tinger-event")
+
+    implementation "io.netty:netty-all:${netty_version}"
+}

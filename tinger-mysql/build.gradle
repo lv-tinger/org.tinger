@@ -1,0 +1,8 @@
+dependencies {
+    implementation project(":tinger-core")
+    implementation project(":tinger-common")
+    implementation project(":tinger-config")
+
+    implementation 'mysql:mysql-connector-java:8.0.30'
+    implementation 'com.zaxxer:HikariCP:4.0.3'
+}

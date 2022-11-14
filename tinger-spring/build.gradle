@@ -1,0 +1,12 @@
+dependencies {
+    implementation project(":tinger-core")
+    implementation project(":tinger-common")
+    implementation project(":tinger-data")
+
+    implementation "org.springframework:spring-core:${spring_version}"
+    implementation "org.springframework:spring-beans:${spring_version}"
+    implementation "org.springframework:spring-context:${spring_version}"
+    implementation "org.springframework:spring-context-support:${spring_version}"
+    implementation "org.springframework:spring-aop:${spring_version}"
+    implementation "org.springframework:spring-aspects:${spring_version}"
+}

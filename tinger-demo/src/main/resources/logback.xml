@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+scan：       当此属性设置为true时，配置文件如果发生改变，将会被重新加载，默认值为true
+scanPeriod： 设置监测配置文件是否有修改的时间间隔，如果没有给出时间单位，默认单位是毫秒。当scan为true时，此属性生效。默认的时间间隔为1分钟。
+debug：      当此属性设置为true时，将打印出logback内部日志信息，实时查看logback运行状态。默认值为false。
+-->
+<configuration debug="false" scan="true" scanPeriod="1 seconds">
+
+    <!--
+    设置日志上下文名称，可以通过%contextName来打印日志上下文名称
+    -->
+    <contextName>tinger</contextName>
+    <!--
+    property：可以用来设置变量，可以通过${name}来访问，有以下的属性
+    name：用于${name}访问的key
+    value：用于${name}访问的value
+    -->
+    <property name="log.path" value="./logs/demo.log"/>
+
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %contextName [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <appender name="file" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <!--<filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>INFO</level>
+        </filter>-->
+        <file>${log.path}</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${log.path}.%d{yyyy-MM-dd}.zip</fileNamePattern>
+        </rollingPolicy>
+        <encoder>
+            <pattern>%date %level [%thread] %logger{36} [%file : %line] %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="org.eclipse.jetty" level="INFO" />
+
+    <root level="debug">
+        <appender-ref ref="console"/>
+        <appender-ref ref="file"/>
+    </root>
+</configuration>
